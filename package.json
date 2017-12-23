@@ -1,0 +1,14 @@
+{
+  "name": "inter-ui",
+  "version": "2.3.0",
+  "description": "Font files for the Inter UI font family.",
+  "main": "inter-ui.css",
+  "keywords": [
+    "inter-ui",
+    "typeface",
+    "font",
+    "font family"
+  ],
+  "author": "Rasmus Andersson (https://rsms.me)",
+  "license": "OFL-1.1"
+}
