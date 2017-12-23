@@ -10,5 +10,7 @@
     "font family"
   ],
   "author": "Rasmus Andersson (https://rsms.me)",
-  "license": "OFL-1.1"
+  "license": "OFL-1.1",
+  "repository": "git@github.com:philipbelesky/inter-ui.git",
+  "private": false
 }
