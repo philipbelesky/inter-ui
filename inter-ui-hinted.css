@@ -1,65 +1,123 @@
-/* Inter UI Font (hinted) */
-
 @font-face {
   font-family: 'Inter UI';
-  src: url("Inter UI (web hinted)/Inter-UI-Regular.woff2") format("woff2"),
+  font-style:  normal;
+  font-weight: 400;
+  src: url('Inter UI (web hinted)/Inter-UI.var.woff2') format("woff2-variations"),
+       url("Inter UI (web hinted)/Inter-UI-Regular.woff2") format("woff2"),
        url("Inter UI (web hinted)/Inter-UI-Regular.woff") format("woff");
-  font-style:  normal;
-  font-weight: 400;
 }
-
 @font-face {
   font-family: 'Inter UI';
-  src: url("Inter UI (web hinted)/Inter-UI-Italic.woff2") format("woff2"),
+  font-style:  italic;
+  font-weight: 400;
+  src: url('Inter UI (web hinted)/Inter-UI.var.woff2') format("woff2-variations"),
+       url("Inter UI (web hinted)/Inter-UI-Italic.woff2") format("woff2"),
        url("Inter UI (web hinted)/Inter-UI-Italic.woff") format("woff");
-  font-style:  italic;
-  font-weight: 400;
 }
 
 @font-face {
   font-family: 'Inter UI';
-  src: url("Inter UI (web hinted)/Inter-UI-Medium.woff2") format("woff2"),
+  font-style:  normal;
+  font-weight: 500;
+  src: url('Inter UI (web hinted)/Inter-UI.var.woff2') format("woff2-variations"),
+       url("Inter UI (web hinted)/Inter-UI-Medium.woff2") format("woff2"),
        url("Inter UI (web hinted)/Inter-UI-Medium.woff") format("woff");
-  font-style:  normal;
-  font-weight: 500;
 }
-
 @font-face {
   font-family: 'Inter UI';
-  src: url("Inter UI (web hinted)/Inter-UI-MediumItalic.woff2") format("woff2"),
+  font-style:  italic;
+  font-weight: 500;
+  src: url('Inter UI (web hinted)/Inter-UI.var.woff2') format("woff2-variations"),
+       url("Inter UI (web hinted)/Inter-UI-MediumItalic.woff2") format("woff2"),
        url("Inter UI (web hinted)/Inter-UI-MediumItalic.woff") format("woff");
-  font-style:  italic;
-  font-weight: 500;
 }
 
 @font-face {
   font-family: 'Inter UI';
-  src: url("Inter UI (web hinted)/Inter-UI-Bold.woff2") format("woff2"),
+  font-style:  normal;
+  font-weight: 600;
+  src: url('Inter UI (web hinted)/Inter-UI.var.woff2') format("woff2-variations"),
+       url("Inter UI (web hinted)/Inter-UI-SemiBold.woff2") format("woff2"),
+       url("Inter UI (web hinted)/Inter-UI-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: 'Inter UI';
+  font-style:  italic;
+  font-weight: 600;
+  src: url('Inter UI (web hinted)/Inter-UI.var.woff2') format("woff2-variations"),
+       url("Inter UI (web hinted)/Inter-UI-SemiBoldItalic.woff2") format("woff2"),
+       url("Inter UI (web hinted)/Inter-UI-SemiBoldItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter UI';
+  font-style:  normal;
+  font-weight: 700;
+  src: url('Inter UI (web hinted)/Inter-UI.var.woff2') format("woff2-variations"),
+       url("Inter UI (web hinted)/Inter-UI-Bold.woff2") format("woff2"),
        url("Inter UI (web hinted)/Inter-UI-Bold.woff") format("woff");
-  font-style:  normal;
-  font-weight: 700;
 }
-
 @font-face {
   font-family: 'Inter UI';
-  src: url("Inter UI (web hinted)/Inter-UI-BoldItalic.woff2") format("woff2"),
+  font-style:  italic;
+  font-weight: 700;
+  src: url('Inter UI (web hinted)/Inter-UI.var.woff2') format("woff2-variations"),
+       url("Inter UI (web hinted)/Inter-UI-BoldItalic.woff2") format("woff2"),
        url("Inter UI (web hinted)/Inter-UI-BoldItalic.woff") format("woff");
-  font-style:  italic;
-  font-weight: 700;
 }
 
 @font-face {
   font-family: 'Inter UI';
-  src: url("Inter UI (web hinted)/Inter-UI-Black.woff2") format("woff2"),
-       url("Inter UI (web hinted)/Inter-UI-Black.woff") format("woff");
+  font-style:  normal;
+  font-weight: 800;
+  src: url('Inter UI (web hinted)/Inter-UI.var.woff2') format("woff2-variations"),
+       url("Inter UI (web hinted)/Inter-UI-ExtraBold.woff2") format("woff2"),
+       url("Inter UI (web hinted)/Inter-UI-ExtraBold.woff") format("woff");
+}
+@font-face {
+  font-family: 'Inter UI';
+  font-style:  italic;
+  font-weight: 800;
+  src: url('Inter UI (web hinted)/Inter-UI.var.woff2') format("woff2-variations"),
+       url("Inter UI (web hinted)/Inter-UI-ExtraBoldItalic.woff2") format("woff2"),
+       url("Inter UI (web hinted)/Inter-UI-ExtraBoldItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter UI';
   font-style:  normal;
   font-weight: 900;
+  src: url('Inter UI (web hinted)/Inter-UI.var.woff2') format("woff2-variations"),
+       url("Inter UI (web hinted)/Inter-UI-Black.woff2") format("woff2"),
+       url("Inter UI (web hinted)/Inter-UI-Black.woff") format("woff");
 }
-
 @font-face {
   font-family: 'Inter UI';
-  src: url("Inter UI (web hinted)/Inter-UI-BlackItalic.woff2") format("woff2"),
-       url("Inter UI (web hinted)/Inter-UI-BlackItalic.woff") format("woff");
   font-style:  italic;
   font-weight: 900;
+  src: url('Inter UI (web hinted)/Inter-UI.var.woff2') format("woff2-variations"),
+       url("Inter UI (web hinted)/Inter-UI-BlackItalic.woff2") format("woff2"),
+       url("Inter UI (web hinted)/Inter-UI-BlackItalic.woff") format("woff");
+}
+
+/*
+Single variable font.
+Note that you may want to do something like this to make sure you're serving
+constant fonts to older browsers:
+
+html {
+  font-family: 'Inter UI', sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'Inter UI var', sans-serif;
+  }
+}
+
+*/
+@font-face {
+  font-family: 'Inter UI var';
+  font-weight: 400 900; /* safe weight range */
+  src: url('Inter UI (web hinted)/Inter-UI.var.woff2') format("woff2-variations"),
+       url('Inter UI (web hinted)/Inter-UI.var.woff2') format("woff2");
 }
