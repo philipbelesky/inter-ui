@@ -114,10 +114,45 @@ html {
   }
 }
 
+BUGS:
+- Safari 12.0 will default to italic instead of regular when font-weight
+  is provided in a @font-face declaration.
+  Workaround: Use "Inter UI var alt" for Safari, or explicitly set
+  `font-variation-settings:"slnt" DEGREE`.
 */
 @font-face {
   font-family: 'Inter UI var';
   font-weight: 400 900; /* safe weight range */
   src: url('Inter UI (web hinted)/Inter-UI.var.woff2') format("woff2-variations"),
        url('Inter UI (web hinted)/Inter-UI.var.woff2') format("woff2");
+}
+
+/* --------------------------------------------------------------------------
+
+"Inter UI var alt" is recommended for Safari and Edge, for reliable italics.
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'Inter UI var alt', sans-serif;
+  }
+}
+
+*/
+@font-face {
+  font-family: 'Inter UI var alt';
+  font-weight: 400 900;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url("Inter UI (web hinted)/Inter-UI-upright.var.woff2") format("woff2 supports variations(gvar)"),
+       url("Inter UI (web hinted)/Inter-UI-upright.var.woff2") format("woff2-variations"),
+       url("Inter UI (web hinted)/Inter-UI-upright.var.woff2") format("woff2");
+}
+@font-face {
+  font-family: 'Inter UI var alt';
+  font-weight: 400 900;
+  font-style: italic;
+  font-named-instance: 'Italic';
+  src: url("Inter UI (web hinted)/Inter-UI-italic.var.woff2") format("woff2 supports variations(gvar)"),
+       url("Inter UI (web hinted)/Inter-UI-italic.var.woff2") format("woff2-variations"),
+       url("Inter UI (web hinted)/Inter-UI-italic.var.woff2") format("woff2");
 }
