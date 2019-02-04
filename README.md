@@ -1,6 +1,6 @@
-# Typeface-Inter-UI
+# Typeface-Inter
 
-The CSS and web font files to easily self-host the [Inter UI font family](https://rsms.me/inter/) created by [Rasmus Andersson](https://rsms.me).
+The CSS and web font files to easily self-host the [Inter font family](https://rsms.me/inter/) created by [Rasmus Andersson](https://rsms.me).
 
 This repository is just a means of more easily distributing the font. It tracks the  releases of the main [inter repository](https://github.com/rsms/inter) as best as I am able.
 
@@ -10,7 +10,7 @@ At present it only contains the `woff` and `woff2` formats. As a result it suppo
 
 As detailed in the main repo:
 
-> Inter UI font files comes in two versions:
+> Inter font files comes in two versions:
 >
 > 1. "unhinted" -- Without TrueType hints (the default)
 > 2. "hinted" -- With TrueType hints
