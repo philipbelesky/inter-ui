@@ -157,9 +157,9 @@ Usage:
   font-weight: 100 900;
   font-style: normal;
   font-named-instance: 'Regular';
-  src: url("Inter (web hinted)/Inter (web hinted)/Inter-upright.var.woff2") format("woff2 supports variations(gvar)"),
-       url("Inter (web hinted)/Inter (web hinted)/Inter-upright.var.woff2") format("woff2-variations"),
-       url("Inter (web hinted)/Inter (web hinted)/Inter-upright.var.woff2") format("woff2");
+  src: url("Inter (web hinted)/Inter-upright.var.woff2") format("woff2 supports variations(gvar)"),
+       url("Inter (web hinted)/Inter-upright.var.woff2") format("woff2-variations"),
+       url("Inter (web hinted)/Inter-upright.var.woff2") format("woff2");
 }
 
 @font-face {
@@ -167,9 +167,9 @@ Usage:
   font-weight: 100 900;
   font-style: italic;
   font-named-instance: 'Italic';
-  src: url("Inter (web hinted)/Inter (web hinted)/Inter-italic.var.woff2") format("woff2 supports variations(gvar)"),
-       url("Inter (web hinted)/Inter (web hinted)/Inter-italic.var.woff2") format("woff2-variations"),
-       url("Inter (web hinted)/Inter (web hinted)/Inter-italic.var.woff2") format("woff2");
+  src: url("Inter (web hinted)/Inter-italic.var.woff2") format("woff2 supports variations(gvar)"),
+       url("Inter (web hinted)/Inter-italic.var.woff2") format("woff2-variations"),
+       url("Inter (web hinted)/Inter-italic.var.woff2") format("woff2");
 }
 
 /* --------------------------------------------------------------------------
@@ -190,6 +190,6 @@ explicitly, e.g.
   font-family: 'Inter var experimental';
   font-weight: 100 900;
   font-style: oblique 0deg 10deg;
-  src: url("Inter (web hinted)/Inter (web hinted)/Inter.var.woff2") format("woff2-variations"),
-       url("Inter (web hinted)/Inter (web hinted)/Inter.var.woff2") format("woff2");
+  src: url("Inter (web hinted)/Inter.var.woff2") format("woff2-variations"),
+       url("Inter (web hinted)/Inter.var.woff2") format("woff2");
 }
