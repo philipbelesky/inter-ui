@@ -6,6 +6,8 @@ This repository is just a means of more easily distributing the font. It tracks 
 
 At present it only contains the `woff` and `woff2` formats. As a result it supports versions of Chrome 5; Safari 5.1; Firefox 3.6; Opera 11.5; IE 9; Android 4.4; iOS 5.1 and above.
 
+SCSS files are also available for use with the Sass preprocessor. The [`font-display` property](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display) can be overridden by setting `$inter-font-display` to a valid `font-display` value *before* importing the desired `.scss` file.
+
 ### Hinted vs Unhinted
 
 As detailed in the main repo:
