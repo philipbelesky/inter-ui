@@ -1,6 +1,6 @@
 {
   "name": "inter-ui",
-  "version": "3.3.4",
+  "version": "3.5.0",
   "description": "Font files for the Inter font family.",
   "main": "inter.css",
   "keywords": [
