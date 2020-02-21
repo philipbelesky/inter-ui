@@ -1,11 +1,11 @@
-$inter-font-display: swap !default;
-$inter-font-path: 'Inter (web)' !default;
+@use "default" with (
+  $inter-font-display: swap,
+  $inter-font-path: 'Inter (web)'
+);
+@use "variable" with (
+  $inter-font-display: swap,
+  $inter-font-path: 'Inter (web)'
+);
 
-@import "normal";
-@include inter;
-
-@import "variable";
-@include inter-var;
-
-@import "variable_experimental";
-@include inter-var-experimental;
+@include default.all;
+@include variable.all;

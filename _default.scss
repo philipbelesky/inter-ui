@@ -1,7 +1,7 @@
 $inter-font-display: swap !default;
 $inter-font-path: 'Inter (web)' !default;
 
-@mixin inter-100-normal {
+@mixin weight-100-normal {
   @font-face {
     font-family: 'Inter';
     font-style: normal;
@@ -12,7 +12,7 @@ $inter-font-path: 'Inter (web)' !default;
   }
 }
 
-@mixin inter-100-italic {
+@mixin weight-100-italic {
   @font-face {
     font-family: 'Inter';
     font-style: italic;
@@ -23,12 +23,12 @@ $inter-font-path: 'Inter (web)' !default;
   }
 }
 
-@mixin inter-100 {
-  @include inter-100-normal;
-  @include inter-100-italic;
+@mixin weight-100 {
+  @include weight-100-normal;
+  @include weight-100-italic;
 }
 
-@mixin inter-200-normal {
+@mixin weight-200-normal {
   @font-face {
     font-family: 'Inter';
     font-style: normal;
@@ -39,7 +39,7 @@ $inter-font-path: 'Inter (web)' !default;
   }
 }
 
-@mixin inter-200-italic {
+@mixin weight-200-italic {
   @font-face {
     font-family: 'Inter';
     font-style: italic;
@@ -50,12 +50,12 @@ $inter-font-path: 'Inter (web)' !default;
   }
 }
 
-@mixin inter-200 {
-  @include inter-200-normal;
-  @include inter-200-italic;
+@mixin weight-200 {
+  @include weight-200-normal;
+  @include weight-200-italic;
 }
 
-@mixin inter-300-normal {
+@mixin weight-300-normal {
   @font-face {
     font-family: 'Inter';
     font-style: normal;
@@ -66,7 +66,7 @@ $inter-font-path: 'Inter (web)' !default;
   }
 }
 
-@mixin inter-300-italic {
+@mixin weight-300-italic {
   @font-face {
     font-family: 'Inter';
     font-style: italic;
@@ -77,12 +77,12 @@ $inter-font-path: 'Inter (web)' !default;
   }
 }
 
-@mixin inter-300 {
-  @include inter-300-normal;
-  @include inter-300-italic;
+@mixin weight-300 {
+  @include weight-300-normal;
+  @include weight-300-italic;
 }
 
-@mixin inter-400-normal {
+@mixin weight-400-normal {
   @font-face {
     font-family: 'Inter';
     font-style: normal;
@@ -93,7 +93,7 @@ $inter-font-path: 'Inter (web)' !default;
   }
 }
 
-@mixin inter-400-italic {
+@mixin weight-400-italic {
   @font-face {
     font-family: 'Inter';
     font-style: italic;
@@ -104,12 +104,12 @@ $inter-font-path: 'Inter (web)' !default;
   }
 }
 
-@mixin inter-400 {
-  @include inter-400-normal;
-  @include inter-400-italic;
+@mixin weight-400 {
+  @include weight-400-normal;
+  @include weight-400-italic;
 }
 
-@mixin inter-500-normal {
+@mixin weight-500-normal {
   @font-face {
     font-family: 'Inter';
     font-style: normal;
@@ -120,7 +120,7 @@ $inter-font-path: 'Inter (web)' !default;
   }
 }
 
-@mixin inter-500-italic {
+@mixin weight-500-italic {
   @font-face {
     font-family: 'Inter';
     font-style: italic;
@@ -131,12 +131,12 @@ $inter-font-path: 'Inter (web)' !default;
   }
 }
 
-@mixin inter-500 {
-  @include inter-500-normal;
-  @include inter-500-italic;
+@mixin weight-500 {
+  @include weight-500-normal;
+  @include weight-500-italic;
 }
 
-@mixin inter-600-normal {
+@mixin weight-600-normal {
   @font-face {
     font-family: 'Inter';
     font-style: normal;
@@ -147,7 +147,7 @@ $inter-font-path: 'Inter (web)' !default;
   }
 }
 
-@mixin inter-600-italic {
+@mixin weight-600-italic {
   @font-face {
     font-family: 'Inter';
     font-style: italic;
@@ -158,12 +158,12 @@ $inter-font-path: 'Inter (web)' !default;
   }
 }
 
-@mixin inter-600 {
-  @include inter-600-normal;
-  @include inter-600-italic;
+@mixin weight-600 {
+  @include weight-600-normal;
+  @include weight-600-italic;
 }
 
-@mixin inter-700-normal {
+@mixin weight-700-normal {
   @font-face {
     font-family: 'Inter';
     font-style: normal;
@@ -174,7 +174,7 @@ $inter-font-path: 'Inter (web)' !default;
   }
 }
 
-@mixin inter-700-italic {
+@mixin weight-700-italic {
   @font-face {
     font-family: 'Inter';
     font-style: italic;
@@ -185,12 +185,12 @@ $inter-font-path: 'Inter (web)' !default;
   }
 }
 
-@mixin inter-700 {
-  @include inter-700-normal;
-  @include inter-700-italic;
+@mixin weight-700 {
+  @include weight-700-normal;
+  @include weight-700-italic;
 }
 
-@mixin inter-800-normal {
+@mixin weight-800-normal {
   @font-face {
     font-family: 'Inter';
     font-style: normal;
@@ -201,7 +201,7 @@ $inter-font-path: 'Inter (web)' !default;
   }
 }
 
-@mixin inter-800-italic {
+@mixin weight-800-italic {
   @font-face {
     font-family: 'Inter';
     font-style: italic;
@@ -212,12 +212,12 @@ $inter-font-path: 'Inter (web)' !default;
   }
 }
 
-@mixin inter-800 {
-  @include inter-800-normal;
-  @include inter-800-italic;
+@mixin weight-800 {
+  @include weight-800-normal;
+  @include weight-800-italic;
 }
 
-@mixin inter-900-normal {
+@mixin weight-900-normal {
   @font-face {
     font-family: 'Inter';
     font-style: normal;
@@ -228,7 +228,7 @@ $inter-font-path: 'Inter (web)' !default;
   }
 }
 
-@mixin inter-900-italic {
+@mixin weight-900-italic {
   @font-face {
     font-family: 'Inter';
     font-style: italic;
@@ -239,43 +239,43 @@ $inter-font-path: 'Inter (web)' !default;
   }
 }
 
-@mixin inter-900 {
-  @include inter-900-normal;
-  @include inter-900-italic;
+@mixin weight-900 {
+  @include weight-900-normal;
+  @include weight-900-italic;
 }
 
-@mixin inter {
-  @include inter-100;
-  @include inter-200;
-  @include inter-300;
-  @include inter-400;
-  @include inter-500;
-  @include inter-600;
-  @include inter-700;
-  @include inter-800;
-  @include inter-900;
+@mixin all {
+  @include weight-100;
+  @include weight-200;
+  @include weight-300;
+  @include weight-400;
+  @include weight-500;
+  @include weight-600;
+  @include weight-700;
+  @include weight-800;
+  @include weight-900;
 }
 
-@mixin inter-normal {
-  @include inter-100-normal;
-  @include inter-200-normal;
-  @include inter-300-normal;
-  @include inter-400-normal;
-  @include inter-500-normal;
-  @include inter-600-normal;
-  @include inter-700-normal;
-  @include inter-800-normal;
-  @include inter-900-normal;
+@mixin normal {
+  @include weight-100-normal;
+  @include weight-200-normal;
+  @include weight-300-normal;
+  @include weight-400-normal;
+  @include weight-500-normal;
+  @include weight-600-normal;
+  @include weight-700-normal;
+  @include weight-800-normal;
+  @include weight-900-normal;
 }
 
-@mixin inter-italic {
-  @include inter-100-italic;
-  @include inter-200-italic;
-  @include inter-300-italic;
-  @include inter-400-italic;
-  @include inter-500-italic;
-  @include inter-600-italic;
-  @include inter-700-italic;
-  @include inter-800-italic;
-  @include inter-900-italic;
+@mixin italic {
+  @include weight-100-italic;
+  @include weight-200-italic;
+  @include weight-300-italic;
+  @include weight-400-italic;
+  @include weight-500-italic;
+  @include weight-600-italic;
+  @include weight-700-italic;
+  @include weight-800-italic;
+  @include weight-900-italic;
 }

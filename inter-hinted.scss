@@ -1,5 +1,5 @@
-$inter-font-display: swap !default;
-$inter-font-path: 'Inter (web hinted)' !default;
-
-@import "normal";
-@include inter;
+@use "default" with (
+  $inter-font-display: swap,
+  $inter-font-path: 'Inter (web hinted)'
+);
+@include default.all;
