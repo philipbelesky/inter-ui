@@ -1,0 +1,34 @@
+$inter-font-display: swap !default;
+$inter-font-path: 'Inter (web)' !default;
+
+/* -------------------------------------------------------
+Variable font.
+Usage:
+
+  html { font-family: 'Inter', sans-serif; }
+  @supports (font-variation-settings: normal) {
+    html { font-family: 'Inter var', sans-serif; }
+  }
+*/
+
+@font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  font-display: $inter-font-display;
+  src: url("#{$inter-font-path}/Inter-roman.var.woff2") format("woff2 supports variations(gvar)"),
+  url("#{$inter-font-path}/Inter-roman.var.woff2") format("woff2-variations"),
+  url("#{$inter-font-path}/Inter-roman.var.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-style: italic;
+  font-named-instance: 'Italic';
+  font-display: $inter-font-display;
+  src: url("#{$inter-font-path}/Inter-italic.var.woff2") format("woff2 supports variations(gvar)"),
+  url("#{$inter-font-path}/Inter-italic.var.woff2") format("woff2-variations"),
+  url("#{$inter-font-path}/Inter-italic.var.woff2") format("woff2");
+}
