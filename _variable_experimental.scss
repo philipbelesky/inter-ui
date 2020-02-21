@@ -15,11 +15,13 @@ explicitly, e.g.
 
 */
 
-@font-face {
-  font-family: 'Inter var experimental';
-  font-weight: 100 900;
-  font-style: oblique 0deg 10deg;
-  font-display: $inter-font-display;
-  src: url("#{$inter-font-path}/Inter.var.woff2") format("woff2-variations"),
-  url("#{$inter-font-path}/Inter.var.woff2") format("woff2");
+@mixin inter-var-experimental {
+  @font-face {
+    font-family: 'Inter var experimental';
+    font-weight: 100 900;
+    font-style: oblique 0deg 10deg;
+    font-display: $inter-font-display;
+    src: url("#{$inter-font-path}/Inter.var.woff2") format("woff2-variations"),
+    url("#{$inter-font-path}/Inter.var.woff2") format("woff2");
+  }
 }

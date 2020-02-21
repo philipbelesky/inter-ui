@@ -2,5 +2,10 @@ $inter-font-display: swap !default;
 $inter-font-path: 'Inter (web)' !default;
 
 @import "normal";
+@include inter;
+
 @import "variable";
+@include inter-var;
+
 @import "variable_experimental";
+@include inter-var-experimental;
