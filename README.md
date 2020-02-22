@@ -8,7 +8,20 @@ At present it only contains the `woff` and `woff2` formats. As a result it suppo
 
 SCSS files are also available for use with the Sass preprocessor. The [`font-display` property](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display) can be overridden by setting `$inter-font-display` to a valid `font-display` value *before* importing the desired `.scss` file.
 
-### Hinted vs Unhinted
+## Modular imports
+
+To avoid having to import all "font faces". You can also use only some of them via SCSS.
+
+If you only want 400 and 700 you can specify exactly this.
+```scss
+@use "~inter-ui/default" as inter-ui with (
+	$inter-font-path: "~inter-ui/Inter (web)"
+);
+@include inter-ui.weight-400;
+@include inter-ui.weight-700;
+```
+
+## Hinted vs Unhinted
 
 As detailed in the main repo:
 
