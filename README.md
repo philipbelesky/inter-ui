@@ -8,6 +8,23 @@ At present it only contains the `woff` and `woff2` formats. As a result it suppo
 
 SCSS files are also available for use with the Sass preprocessor. The [`font-display` property](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display) can be overridden by setting `$inter-font-display` to a valid `font-display` value *before* importing the desired `.scss` file.
 
+## Modular imports
+
+To avoid having to import all "font faces". You can also use only some of them via SCSS.
+
+If you only want 400 and 700 you can specify exactly this.
+```scss
+@use "~inter-ui/default" as inter-ui with (
+	$inter-font-path: "~inter-ui/Inter (web latin)"
+);
+@include inter-ui.weight-400;
+@include inter-ui.weight-700;
+```
+
+## Versions
+There are several versions you can choose from.
+To use them with the modules, just change the `$inter-font-path` to e.g. `Inter (web hinted)`
+
 ### Hinted vs Unhinted
 
 As detailed in the main repo:
@@ -24,3 +41,11 @@ cases increase the legibility of text.
 > Additionally, hints are little computer programs that takes up considerable
 disk space, meaning that font files with hints are larger than those without
 hints. This might be a consideration when using web fonts.
+
+### Latin
+If you only need support for the latin characters. Then you can use this version.
+The normal `Inter (web)` version average filesize is between 150kb and 100kb,
+the reduced latin version is on average 30kb per font.
+
+This was generated using [glyphhanger](https://github.com/filamentgroup/glyphhanger):
+`glyphhanger --subset=*.otf --LATIN --formats=woff2,woff`

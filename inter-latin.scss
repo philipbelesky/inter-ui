@@ -1,10 +1,10 @@
 @use "default" with (
   $inter-font-display: swap,
-  $inter-font-path: 'Inter (web)'
+  $inter-font-path: 'Inter (web latin)'
 );
 @use "variable" with (
   $inter-font-display: swap,
-  $inter-font-path: 'Inter (web)'
+  $inter-font-path: 'Inter (web latin)'
 );
 
 @include default.all;
