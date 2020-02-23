@@ -22,6 +22,7 @@ If you only want 400 and 700 you can specify exactly this.
 ```
 
 ## Versions
+
 There are several versions you can choose from.
 To use them with the modules, just change the `$inter-font-path` to e.g. `Inter (web hinted)`
 
