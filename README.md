@@ -1,4 +1,4 @@
-# Typeface-Inter
+# The Inter Typeface (npm distribution)
 
 The CSS and web font files to easily self-host the [Inter font family](https://rsms.me/inter/) created by [Rasmus Andersson](https://rsms.me).
 
@@ -44,6 +44,7 @@ disk space, meaning that font files with hints are larger than those without
 hints. This might be a consideration when using web fonts.
 
 ### Latin
+
 If you only need support for the latin characters. Then you can use this version.
 The normal `Inter (web)` version average filesize is between 150kb and 100kb,
 the reduced latin version is on average 30kb per font.
