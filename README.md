@@ -21,6 +21,8 @@ If you only want 400 and 700 you can specify exactly this.
 @include inter-ui.weight-700;
 ```
 
+Note that this `@use` syntax is [not currently supported in the node-sass or ruby sass implementations](https://sass-lang.com/documentation/at-rules/use). We recommend using the primary sass implementation 'dart sass'.
+
 ## Versions
 
 There are several versions you can choose from.
