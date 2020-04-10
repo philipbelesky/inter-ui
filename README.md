@@ -8,6 +8,33 @@ At present it only contains the `woff` and `woff2` formats. As a result it suppo
 
 SCSS files are also available for use with the Sass preprocessor. The [`font-display` property](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display) can be overridden by setting `$inter-font-display` to a valid `font-display` value *before* importing the desired `.scss` file.
 
+## Quick start
+
+```sh
+npm install --save inter-ui
+```
+
+Add the following to your SCSS
+
+```scss
+@use "~inter-ui/default" with (
+  $inter-font-display: swap,
+  $inter-font-path: '~inter-ui/Inter (web)'
+);
+@use "~inter-ui/variable" with (
+  $inter-font-display: swap,
+  $inter-font-path: '~inter-ui/Inter (web)'
+);
+@include default.all;
+@include variable.all;
+
+html { font-family: "Inter", "system-ui"; }
+
+@supports (font-variation-settings: normal) {
+  html { font-family: "Inter var", "system-ui"; }
+}
+```
+
 ## Modular imports
 
 To avoid having to import all "font faces". You can also use only some of them via SCSS.
