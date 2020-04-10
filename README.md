@@ -78,5 +78,4 @@ If you only need support for the latin characters. Then you can use this version
 The normal `Inter (web)` version average filesize is between 150kb and 100kb,
 the reduced latin version is on average 30kb per font.
 
-This was generated using [glyphhanger](https://github.com/filamentgroup/glyphhanger):
-`glyphhanger --subset=*.otf --LATIN --formats=woff2,woff`
+This was generated using [glyphhanger](https://github.com/filamentgroup/glyphhanger). See `package.json` for the build script.

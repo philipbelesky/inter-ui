@@ -28,5 +28,11 @@
   "private": false,
   "devDependencies": {
     "glyphhanger": "^3.2.0"
+  },
+  "scripts": {
+    "copy": "cp -a './temp/Inter Hinted for Windows/Web/' './Inter (web hinted)/' && cp -a './temp/Inter Web/' './Inter (web)/'",
+    "subset": "npm run subset-hinted & npm run subset-unhinted",
+    "subset-unhinted": "glyphhanger --subset='./temp/Inter Desktop/*.otf' --LATIN --formats=woff2,woff                    && cp -a './temp/Inter Desktop/' './Inter (web latin)/'                           && rename 's/-subset//' './Inter (web latin)/'*.woff*",
+    "subset-hinted":   "glyphhanger --subset='./temp/Inter Hinted for Windows/Desktop/*.ttf' --LATIN --formats=woff2,woff && cp -a './temp/Inter Hinted for Windows/Desktop/' './Inter (web hinted latin)/' && rename 's/-subset//' './Inter (web hinted latin)/'*.woff*"
   }
 }
