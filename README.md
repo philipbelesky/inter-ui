@@ -35,6 +35,12 @@ html { font-family: "Inter", "system-ui"; }
 }
 ```
 
+**Note:** If you're using the Apache web server to serve the font files, you will have to
+[adapt its configuration](https://serverfault.com/questions/159152/apache-treating-files-with-var-in-their-names-as-type-maps)
+to make it serve variable fonts as expected. This is because the font files contain
+`.var.` in their name, which causes Apache to interpret those files in a special way
+(and will result in a *500 Internal Server Error* by default).
+
 ## Modular imports
 
 To avoid having to import all "font faces". You can also use only some of them via SCSS.
