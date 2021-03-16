@@ -1,6 +1,6 @@
 {
   "name": "inter-ui",
-  "version": "3.15.0",
+  "version": "3.15.1",
   "description": "Font files for the Inter font family.",
   "main": "inter.css",
   "keywords": [
@@ -33,10 +33,7 @@
     "copy": "cp -a './temp/Inter Hinted for Windows/Web/' './Inter (web hinted)/' && cp -a './temp/Inter Web/' './Inter (web)/'",
     "subset": "npm run subset-hinted & npm run subset-unhinted && npm run subset-cleanupnup",
     "subset-unhinted": "glyphhanger --subset='./temp/Inter Web/*.woff2' --LATIN --formats=woff2,woff                    && find './temp/Inter Web/' -type f -name '*subset.woff**' -exec cp {} './Inter (web latin)/' ';'                            && rename 's/-subset//' './Inter (web latin)/'*.woff*",
-    "subset-hinted":   "glyphhanger --subset='./temp/Inter Hinted for Windows/Web/*.woff2' --LATIN --formats=woff2,woff && find './temp/Inter Hinted for Windows/Web/' -type f -name '*subset.woff**' -exec cp {} './Inter (web hinted latin)/' ';'  && rename 's/-subset//' './Inter (web hinted latin)/'*.woff*",
-    "subset-cleanup":  "rm './Inter (web latin)/Inter.var.woff' && rm './Inter (web latin)/Inter-italic.var.woff' && rm './Inter (web latin)/Inter-roman.var.woff'"
+    "subset-hinted": "glyphhanger --subset='./temp/Inter Hinted for Windows/Web/*.woff2' --LATIN --formats=woff2,woff && find './temp/Inter Hinted for Windows/Web/' -type f -name '*subset.woff**' -exec cp {} './Inter (web hinted latin)/' ';'  && rename 's/-subset//' './Inter (web hinted latin)/'*.woff*",
+    "subset-cleanup": "rm './Inter (web latin)/Inter.var.woff' && rm './Inter (web latin)/Inter-italic.var.woff' && rm './Inter (web latin)/Inter-roman.var.woff'"
   }
 }
-
-
-
