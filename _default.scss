@@ -1,5 +1,6 @@
 $inter-font-display: swap !default;
 $inter-font-path: 'Inter (web)' !default;
+$inter-font-path-suffix: '?v=3.18' !default;
 
 @mixin weight-100-normal {
   @font-face {
@@ -7,8 +8,8 @@ $inter-font-path: 'Inter (web)' !default;
     font-style: normal;
     font-weight: 100;
     font-display: $inter-font-display;
-    src: url("#{$inter-font-path}/Inter-Thin.woff2") format("woff2"),
-    url("#{$inter-font-path}/Inter-Thin.woff") format("woff");
+    src: url("#{$inter-font-path}/Inter-Thin.woff2#{$inter-font-path-suffix}") format("woff2"),
+    url("#{$inter-font-path}/Inter-Thin.woff#{$inter-font-path-suffix}") format("woff");
   }
 }
 
@@ -18,8 +19,8 @@ $inter-font-path: 'Inter (web)' !default;
     font-style: italic;
     font-weight: 100;
     font-display: $inter-font-display;
-    src: url("#{$inter-font-path}/Inter-ThinItalic.woff2") format("woff2"),
-    url("#{$inter-font-path}/Inter-ThinItalic.woff") format("woff");
+    src: url("#{$inter-font-path}/Inter-ThinItalic.woff2#{$inter-font-path-suffix}") format("woff2"),
+    url("#{$inter-font-path}/Inter-ThinItalic.woff#{$inter-font-path-suffix}") format("woff");
   }
 }
 
@@ -34,8 +35,8 @@ $inter-font-path: 'Inter (web)' !default;
     font-style: normal;
     font-weight: 200;
     font-display: $inter-font-display;
-    src: url("#{$inter-font-path}/Inter-ExtraLight.woff2") format("woff2"),
-    url("#{$inter-font-path}/Inter-ExtraLight.woff") format("woff");
+    src: url("#{$inter-font-path}/Inter-ExtraLight.woff2#{$inter-font-path-suffix}") format("woff2"),
+    url("#{$inter-font-path}/Inter-ExtraLight.woff#{$inter-font-path-suffix}") format("woff");
   }
 }
 
@@ -45,8 +46,8 @@ $inter-font-path: 'Inter (web)' !default;
     font-style: italic;
     font-weight: 200;
     font-display: $inter-font-display;
-    src: url("#{$inter-font-path}/Inter-ExtraLightItalic.woff2") format("woff2"),
-    url("#{$inter-font-path}/Inter-ExtraLightItalic.woff") format("woff");
+    src: url("#{$inter-font-path}/Inter-ExtraLightItalic.woff2#{$inter-font-path-suffix}") format("woff2"),
+    url("#{$inter-font-path}/Inter-ExtraLightItalic.woff#{$inter-font-path-suffix}") format("woff");
   }
 }
 
@@ -61,8 +62,8 @@ $inter-font-path: 'Inter (web)' !default;
     font-style: normal;
     font-weight: 300;
     font-display: $inter-font-display;
-    src: url("#{$inter-font-path}/Inter-Light.woff2") format("woff2"),
-    url("#{$inter-font-path}/Inter-Light.woff") format("woff");
+    src: url("#{$inter-font-path}/Inter-Light.woff2#{$inter-font-path-suffix}") format("woff2"),
+    url("#{$inter-font-path}/Inter-Light.woff#{$inter-font-path-suffix}") format("woff");
   }
 }
 
@@ -72,8 +73,8 @@ $inter-font-path: 'Inter (web)' !default;
     font-style: italic;
     font-weight: 300;
     font-display: $inter-font-display;
-    src: url("#{$inter-font-path}/Inter-LightItalic.woff2") format("woff2"),
-    url("#{$inter-font-path}/Inter-LightItalic.woff") format("woff");
+    src: url("#{$inter-font-path}/Inter-LightItalic.woff2#{$inter-font-path-suffix}") format("woff2"),
+    url("#{$inter-font-path}/Inter-LightItalic.woff#{$inter-font-path-suffix}") format("woff");
   }
 }
 
@@ -88,8 +89,8 @@ $inter-font-path: 'Inter (web)' !default;
     font-style: normal;
     font-weight: 400;
     font-display: $inter-font-display;
-    src: url("#{$inter-font-path}/Inter-Regular.woff2") format("woff2"),
-    url("#{$inter-font-path}/Inter-Regular.woff") format("woff");
+    src: url("#{$inter-font-path}/Inter-Regular.woff2#{$inter-font-path-suffix}") format("woff2"),
+    url("#{$inter-font-path}/Inter-Regular.woff#{$inter-font-path-suffix}") format("woff");
   }
 }
 
@@ -99,8 +100,8 @@ $inter-font-path: 'Inter (web)' !default;
     font-style: italic;
     font-weight: 400;
     font-display: $inter-font-display;
-    src: url("#{$inter-font-path}/Inter-Italic.woff2") format("woff2"),
-    url("#{$inter-font-path}/Inter-Italic.woff") format("woff");
+    src: url("#{$inter-font-path}/Inter-Italic.woff2#{$inter-font-path-suffix}") format("woff2"),
+    url("#{$inter-font-path}/Inter-Italic.woff#{$inter-font-path-suffix}") format("woff");
   }
 }
 
@@ -115,8 +116,8 @@ $inter-font-path: 'Inter (web)' !default;
     font-style: normal;
     font-weight: 500;
     font-display: $inter-font-display;
-    src: url("#{$inter-font-path}/Inter-Medium.woff2") format("woff2"),
-    url("#{$inter-font-path}/Inter-Medium.woff") format("woff");
+    src: url("#{$inter-font-path}/Inter-Medium.woff2#{$inter-font-path-suffix}") format("woff2"),
+    url("#{$inter-font-path}/Inter-Medium.woff#{$inter-font-path-suffix}") format("woff");
   }
 }
 
@@ -126,8 +127,8 @@ $inter-font-path: 'Inter (web)' !default;
     font-style: italic;
     font-weight: 500;
     font-display: $inter-font-display;
-    src: url("#{$inter-font-path}/Inter-MediumItalic.woff2") format("woff2"),
-    url("#{$inter-font-path}/Inter-MediumItalic.woff") format("woff");
+    src: url("#{$inter-font-path}/Inter-MediumItalic.woff2#{$inter-font-path-suffix}") format("woff2"),
+    url("#{$inter-font-path}/Inter-MediumItalic.woff#{$inter-font-path-suffix}") format("woff");
   }
 }
 
@@ -142,8 +143,8 @@ $inter-font-path: 'Inter (web)' !default;
     font-style: normal;
     font-weight: 600;
     font-display: $inter-font-display;
-    src: url("#{$inter-font-path}/Inter-SemiBold.woff2") format("woff2"),
-    url("#{$inter-font-path}/Inter-SemiBold.woff") format("woff");
+    src: url("#{$inter-font-path}/Inter-SemiBold.woff2#{$inter-font-path-suffix}") format("woff2"),
+    url("#{$inter-font-path}/Inter-SemiBold.woff#{$inter-font-path-suffix}") format("woff");
   }
 }
 
@@ -153,8 +154,8 @@ $inter-font-path: 'Inter (web)' !default;
     font-style: italic;
     font-weight: 600;
     font-display: $inter-font-display;
-    src: url("#{$inter-font-path}/Inter-SemiBoldItalic.woff2") format("woff2"),
-    url("#{$inter-font-path}/Inter-SemiBoldItalic.woff") format("woff");
+    src: url("#{$inter-font-path}/Inter-SemiBoldItalic.woff2#{$inter-font-path-suffix}") format("woff2"),
+    url("#{$inter-font-path}/Inter-SemiBoldItalic.woff#{$inter-font-path-suffix}") format("woff");
   }
 }
 
@@ -169,8 +170,8 @@ $inter-font-path: 'Inter (web)' !default;
     font-style: normal;
     font-weight: 700;
     font-display: $inter-font-display;
-    src: url("#{$inter-font-path}/Inter-Bold.woff2") format("woff2"),
-    url("#{$inter-font-path}/Inter-Bold.woff") format("woff");
+    src: url("#{$inter-font-path}/Inter-Bold.woff2#{$inter-font-path-suffix}") format("woff2"),
+    url("#{$inter-font-path}/Inter-Bold.woff#{$inter-font-path-suffix}") format("woff");
   }
 }
 
@@ -180,8 +181,8 @@ $inter-font-path: 'Inter (web)' !default;
     font-style: italic;
     font-weight: 700;
     font-display: $inter-font-display;
-    src: url("#{$inter-font-path}/Inter-BoldItalic.woff2") format("woff2"),
-    url("#{$inter-font-path}/Inter-BoldItalic.woff") format("woff");
+    src: url("#{$inter-font-path}/Inter-BoldItalic.woff2#{$inter-font-path-suffix}") format("woff2"),
+    url("#{$inter-font-path}/Inter-BoldItalic.woff#{$inter-font-path-suffix}") format("woff");
   }
 }
 
@@ -196,8 +197,8 @@ $inter-font-path: 'Inter (web)' !default;
     font-style: normal;
     font-weight: 800;
     font-display: $inter-font-display;
-    src: url("#{$inter-font-path}/Inter-ExtraBold.woff2") format("woff2"),
-    url("#{$inter-font-path}/Inter-ExtraBold.woff") format("woff");
+    src: url("#{$inter-font-path}/Inter-ExtraBold.woff2#{$inter-font-path-suffix}") format("woff2"),
+    url("#{$inter-font-path}/Inter-ExtraBold.woff#{$inter-font-path-suffix}") format("woff");
   }
 }
 
@@ -207,8 +208,8 @@ $inter-font-path: 'Inter (web)' !default;
     font-style: italic;
     font-weight: 800;
     font-display: $inter-font-display;
-    src: url("#{$inter-font-path}/Inter-ExtraBoldItalic.woff2") format("woff2"),
-    url("#{$inter-font-path}/Inter-ExtraBoldItalic.woff") format("woff");
+    src: url("#{$inter-font-path}/Inter-ExtraBoldItalic.woff2#{$inter-font-path-suffix}") format("woff2"),
+    url("#{$inter-font-path}/Inter-ExtraBoldItalic.woff#{$inter-font-path-suffix}") format("woff");
   }
 }
 
@@ -223,8 +224,8 @@ $inter-font-path: 'Inter (web)' !default;
     font-style: normal;
     font-weight: 900;
     font-display: $inter-font-display;
-    src: url("#{$inter-font-path}/Inter-Black.woff2") format("woff2"),
-    url("#{$inter-font-path}/Inter-Black.woff") format("woff");
+    src: url("#{$inter-font-path}/Inter-Black.woff2#{$inter-font-path-suffix}") format("woff2"),
+    url("#{$inter-font-path}/Inter-Black.woff#{$inter-font-path-suffix}") format("woff");
   }
 }
 
@@ -234,8 +235,8 @@ $inter-font-path: 'Inter (web)' !default;
     font-style: italic;
     font-weight: 900;
     font-display: $inter-font-display;
-    src: url("#{$inter-font-path}/Inter-BlackItalic.woff2") format("woff2"),
-    url("#{$inter-font-path}/Inter-BlackItalic.woff") format("woff");
+    src: url("#{$inter-font-path}/Inter-BlackItalic.woff2#{$inter-font-path-suffix}") format("woff2"),
+    url("#{$inter-font-path}/Inter-BlackItalic.woff#{$inter-font-path-suffix}") format("woff");
   }
 }
 
