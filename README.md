@@ -14,7 +14,9 @@ SCSS files are also available for use with the Sass preprocessor. The [`font-dis
 npm install --save inter-ui
 ```
 
-Add the following to your SCSS
+### SCSS
+
+Add the following to your SCSS:
 
 ```scss
 @use "~inter-ui/default" with (
@@ -35,7 +37,35 @@ html { font-family: "Inter", "system-ui"; }
 }
 ```
 
-**Note:** If you're using the Apache web server to serve the font files, you will have to
+Note that this `@use` syntax is [not currently supported in the node-sass or ruby sass implementations](https://sass-lang.com/documentation/at-rules/use). We recommend using the primary sass implementation [dart sass](https://github.com/sass/dart-sass).
+
+### JS/CSS
+
+We have pre-built CSS files that you can include directly (with `font-display` being `swap`).
+
+Add the following to your script:
+
+```js
+import "inter-ui/inter.css";
+// Or use one of those versions:
+// import "inter-ui/inter-latin.css";
+// import "inter-ui/inter-hinted.css";
+// import "inter-ui/inter-hinted-latin.css";
+```
+
+Add the following to your stylesheet:
+
+```css
+html { font-family: "Inter", "system-ui"; }
+
+@supports (font-variation-settings: normal) {
+  html { font-family: "Inter var", "system-ui"; }
+}
+```
+
+## Quirks
+
+If you're using the Apache web server to serve the font files, you will have to
 [adapt its configuration](https://serverfault.com/questions/159152/apache-treating-files-with-var-in-their-names-as-type-maps)
 to make it serve variable fonts as expected. This is because the font files contain
 `.var.` in their name, which causes Apache to interpret those files in a special way
@@ -54,12 +84,11 @@ If you only want 400 and 700 you can specify exactly this.
 @include inter-ui.weight-700;
 ```
 
-Note that this `@use` syntax is [not currently supported in the node-sass or ruby sass implementations](https://sass-lang.com/documentation/at-rules/use). We recommend using the primary sass implementation 'dart sass'.
-
 ## Versions
 
 There are several versions you can choose from.
 To use them with the modules, just change the `$inter-font-path` to e.g. `Inter (web hinted)`
+or use the other pre-built CSS files.
 
 ### Hinted vs Unhinted
 
@@ -78,6 +107,9 @@ cases increase the legibility of text.
 disk space, meaning that font files with hints are larger than those without
 hints. This might be a consideration when using web fonts.
 
+* SCSS use: set `$inter-font-path` to `Inter (web hinted)` or `Inter (web hinted latin)`
+* JS/CSS use: import `inter-ui/inter-hinted.css` or `inter-ui/inter-hinted-latin.css`
+
 ### Latin
 
 If you only need support for the latin characters. Then you can use this version.
@@ -85,3 +117,6 @@ The normal `Inter (web)` version average filesize is between 150kb and 100kb,
 the reduced latin version is on average 30kb per font.
 
 This was generated using [glyphhanger](https://github.com/filamentgroup/glyphhanger). See `package.json` for the build script.
+
+* SCSS use: set `$inter-font-path` to `Inter (web latin)` or `Inter (web hinted latin)`
+* JS/CSS use: import `inter-ui/inter-latin.css` or `inter-ui/inter-hinted-latin.css`
