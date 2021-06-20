@@ -27,10 +27,12 @@
   "repository": "git@github.com:philipbelesky/inter-ui.git",
   "private": false,
   "devDependencies": {
-    "glyphhanger": "^3.2.0"
+    "glyphhanger": "^3.2.0",
+    "sass": "1.35.1"
   },
   "scripts": {
     "copy": "cp -a './temp/Inter Hinted for Windows/Web/' './Inter (web hinted)/' && cp -a './temp/Inter Web/' './Inter (web)/'",
+    "generate-css": "sass --no-source-map inter.scss:inter.css inter-hinted.scss:inter-hinted.css inter-latin.scss:inter-latin.css inter-hinted-latin.scss:inter-hinted-latin.css",
     "subset": "npm run subset-hinted & npm run subset-unhinted && npm run subset-cleanup",
     "subset-unhinted": "glyphhanger --subset='./temp/Inter Web/*.woff2' --LATIN --formats=woff2,woff                    && find './temp/Inter Web/' -type f -name '*subset.woff**' -exec cp {} './Inter (web latin)/' ';'                            && rename 's/-subset//' './Inter (web latin)/'*.woff*",
     "subset-hinted": "glyphhanger --subset='./temp/Inter Hinted for Windows/Web/*.woff2' --LATIN --formats=woff2,woff && find './temp/Inter Hinted for Windows/Web/' -type f -name '*subset.woff**' -exec cp {} './Inter (web hinted latin)/' ';'  && rename 's/-subset//' './Inter (web hinted latin)/'*.woff*",

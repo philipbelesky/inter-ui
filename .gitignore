@@ -3,3 +3,4 @@
 /Inter (web hinted latin)/*.ttf
 /Inter (web)/*.otf
 /Inter (web hinted)/*.ttf
+node_modules
