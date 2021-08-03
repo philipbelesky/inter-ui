@@ -65,11 +65,23 @@ html { font-family: "Inter", "system-ui"; }
 
 ## Quirks
 
-If you're using the Apache web server to serve the font files, you will have to
-[adapt its configuration](https://serverfault.com/questions/159152/apache-treating-files-with-var-in-their-names-as-type-maps)
-to make it serve variable fonts as expected. This is because the font files contain
-`.var.` in their name, which causes Apache to interpret those files in a special way
-(and will result in a *500 Internal Server Error* by default).
+If you're using the Apache web server to serve the font files, you will probably
+encounter a *500 Internal Server Error* by default. This is because the font files contain
+`.var.` in their name, which causes Apache to interpret those files in a special way.
+
+There are two ways to solve this:
+
+Either [adapt its configuration](https://serverfault.com/questions/159152/apache-treating-files-with-var-in-their-names-as-type-maps)
+to make it serve variable fonts as expected.
+
+Alternatively you can copy/rename the font files removing the `.var` in their name and use the
+SCSS variable `$inter-font-variable-suffix` to change the filename in the CSS:
+
+```scss
+@use "~inter-ui/variable" with (
+  $inter-font-variable-suffix: ''
+);
+```
 
 ## Modular imports
 
