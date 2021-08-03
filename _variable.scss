@@ -1,5 +1,6 @@
 $inter-font-display: swap !default;
 $inter-font-path: 'Inter (web)' !default;
+$inter-font-variable-suffix: '.var' !default;
 $inter-font-path-suffix: '?v=3.19' !default;
 
 @mixin normal {
@@ -9,9 +10,9 @@ $inter-font-path-suffix: '?v=3.19' !default;
     font-style: normal;
     font-named-instance: 'Regular';
     font-display: $inter-font-display;
-    src: url("#{$inter-font-path}/Inter-roman.var.woff2#{$inter-font-path-suffix}") format("woff2 supports variations(gvar)"),
-    url("#{$inter-font-path}/Inter-roman.var.woff2#{$inter-font-path-suffix}") format("woff2-variations"),
-    url("#{$inter-font-path}/Inter-roman.var.woff2#{$inter-font-path-suffix}") format("woff2");
+    src: url("#{$inter-font-path}/Inter-roman#{$inter-font-variable-suffix}.woff2#{$inter-font-path-suffix}") format("woff2 supports variations(gvar)"),
+    url("#{$inter-font-path}/Inter-roman#{$inter-font-variable-suffix}.woff2#{$inter-font-path-suffix}") format("woff2-variations"),
+    url("#{$inter-font-path}/Inter-roman#{$inter-font-variable-suffix}.woff2#{$inter-font-path-suffix}") format("woff2");
   }
 }
 
@@ -22,9 +23,9 @@ $inter-font-path-suffix: '?v=3.19' !default;
     font-style: italic;
     font-named-instance: 'Italic';
     font-display: $inter-font-display;
-    src: url("#{$inter-font-path}/Inter-italic.var.woff2#{$inter-font-path-suffix}") format("woff2 supports variations(gvar)"),
-    url("#{$inter-font-path}/Inter-italic.var.woff2#{$inter-font-path-suffix}") format("woff2-variations"),
-    url("#{$inter-font-path}/Inter-italic.var.woff2#{$inter-font-path-suffix}") format("woff2");
+    src: url("#{$inter-font-path}/Inter-italic#{$inter-font-variable-suffix}.woff2#{$inter-font-path-suffix}") format("woff2 supports variations(gvar)"),
+    url("#{$inter-font-path}/Inter-italic#{$inter-font-variable-suffix}.woff2#{$inter-font-path-suffix}") format("woff2-variations"),
+    url("#{$inter-font-path}/Inter-italic#{$inter-font-variable-suffix}.woff2#{$inter-font-path-suffix}") format("woff2");
   }
 }
 
@@ -64,8 +65,8 @@ $inter-font-path-suffix: '?v=3.19' !default;
     font-weight: 100 900;
     font-style: oblique 0deg 10deg;
     font-display: $inter-font-display;
-    src: url("#{$inter-font-path}/Inter.var.woff2#{$inter-font-path-suffix}") format("woff2-variations"),
-    url("#{$inter-font-path}/Inter.var.woff2#{$inter-font-path-suffix}") format("woff2");
+    src: url("#{$inter-font-path}/Inter#{$inter-font-variable-suffix}.woff2#{$inter-font-path-suffix}") format("woff2-variations"),
+    url("#{$inter-font-path}/Inter#{$inter-font-variable-suffix}.woff2#{$inter-font-path-suffix}") format("woff2");
   }
 }
 
