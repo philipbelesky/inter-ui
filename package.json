@@ -37,7 +37,7 @@
   "repository": "git@github.com:philipbelesky/inter-ui.git",
   "private": false,
   "devDependencies": {
-    "glyphhanger": "^3.2.0",
+    "glyphhanger": "^5.0.0",
     "sass": "1.35.1"
   },
   "scripts": {
