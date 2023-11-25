@@ -37,8 +37,8 @@
   "repository": "git@github.com:philipbelesky/inter-ui.git",
   "private": false,
   "devDependencies": {
-    "glyphhanger": "^3.2.0",
-    "sass": "1.35.1"
+    "glyphhanger": "^5.0.0",
+    "sass": "1.69.5"
   },
   "scripts": {
     "build-supersets": "npm run delete-supersets && npm run copy-supersets",
