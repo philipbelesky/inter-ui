@@ -49,7 +49,7 @@
     "delete-supersets": "rm -fr './web' && mkdir './web' && rm -fr './variable' && mkdir './variable' && rm -fr './display' && mkdir './display'",
     "copy-supersets": "cp -a ./temp/InterVariable*.woff2 ./variable/ & cp -a ./temp/InterDisplay-*.woff2 ./display & cp -a ./temp/Inter-*.woff2 ./web",
     "build-subsets": "npm run delete-subsets && npm run subset-web && npm run subset-display && npm run subset-variable",
-    "delete-subsets": "rm -fr './web-latin' && mkdir './web-latin' && rm -fr './variable-latin' && mkdir './variable-latin' && rm -fr './display-latin' && mkdir './display-latin'",
+    "delete-subsets": "find ./temp/ -name '*subset.woff*' -exec rm -rf {} ';' && rm -fr './web-latin' && mkdir './web-latin' && rm -fr './variable-latin' && mkdir './variable-latin' && rm -fr './display-latin' && mkdir './display-latin'",
     "subset-web": "glyphhanger --subset='./temp/Inter-*.woff2' --LATIN --formats=woff2,woff && cp -a ./temp/Inter-*-subset.woff2 ./web-latin/",
     "subset-display": "glyphhanger --subset='./temp/InterDisplay-*.woff2' --LATIN --formats=woff2,woff && cp -a ./temp/InterDisplay-*-subset.woff2 ./display-latin/",
     "subset-variable": "glyphhanger --subset='./temp/InterVariable*.woff2' --LATIN --formats=woff2,woff && cp -a ./temp/InterVariable-*-subset.woff2 ./variable-latin/"
