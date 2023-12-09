@@ -1,6 +1,7 @@
 # A Release Checklist
 
-- Copy over new release folder to `/temp` (delete any existing folders in `/temp`)
+- Delete existing files in `/web`
+- Copy over contents of the `/web` folder from the release zip to `/temp`
 - Copy over normal-setted font files to `web` directories:
   - `$ npm run build-supersets`
 - Create latin subsets and copy them to `web latin` directories:
