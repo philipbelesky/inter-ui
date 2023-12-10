@@ -12,3 +12,8 @@
 - Publish release
   - `$ npm version X.Y.Z` (updates `package.json` + commits the change + makes the git tag)
   - `$ npm publish`
+
+# Build Dependencies
+
+- Standard npm stuff
+- `fonttools` and `brotli` for glyphhanger, see <https://github.com/zachleat/glyphhanger#prerequisite-pyftsubset>

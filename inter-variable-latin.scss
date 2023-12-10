@@ -2,10 +2,5 @@
   $inter-font-display: swap,
   $inter-font-path: 'variable-latin'
 );
-@use "variable" with (
-  $inter-font-display: swap,
-  $inter-font-path: 'variable-latin'
-);
 
 @include default.all;
-@include variable.all;

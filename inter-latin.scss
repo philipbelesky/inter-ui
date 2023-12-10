@@ -4,7 +4,7 @@
 );
 @use "variable" with (
   $inter-font-display: swap,
-  $inter-font-path: 'web-latin'
+  $inter-font-path: 'variable-latin'
 );
 
 @include default.all;

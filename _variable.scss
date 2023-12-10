@@ -5,7 +5,7 @@ $inter-font-path-suffix: '?v=4.0' !default;
 
 @mixin normal {
   @font-face {
-    font-family: 'Inter var';
+    font-family: 'InterVariable';
     font-weight: 100 900;
     font-style: normal;
     font-named-instance: 'Regular';
@@ -18,7 +18,7 @@ $inter-font-path-suffix: '?v=4.0' !default;
 
 @mixin italic {
   @font-face {
-    font-family: 'Inter var';
+    font-family: 'InterVariable';
     font-weight: 100 900;
     font-style: italic;
     font-named-instance: 'Italic';
@@ -36,7 +36,7 @@ $inter-font-path-suffix: '?v=4.0' !default;
 
     html { font-family: 'Inter', sans-serif; }
     @supports (font-variation-settings: normal) {
-      html { font-family: 'Inter var', sans-serif; }
+      html { font-family: 'InterVariable', sans-serif; }
     }
   */
 
@@ -61,7 +61,7 @@ $inter-font-path-suffix: '?v=4.0' !default;
   */
 
   @font-face {
-    font-family: 'Inter var experimental';
+    font-family: 'InterVariable experimental';
     font-weight: 100 900;
     font-style: oblique 0deg 10deg;
     font-display: $inter-font-display;
