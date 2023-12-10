@@ -1,6 +1,0 @@
-@use "default" with (
-  $inter-font-display: swap,
-  $inter-font-path: 'variable'
-);
-
-@include default.all;

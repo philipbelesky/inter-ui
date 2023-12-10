@@ -1,8 +1,8 @@
-# The Inter Typeface (npm distribution)
+# The Inter Typeface (a npm distribution)
 
 The CSS and web font files to easily self-host the [Inter font family](https://rsms.me/inter/) created by [Rasmus Andersson](https://rsms.me).
 
-This repository is just a means of more easily distributing the font. It tracks the  releases of the main [inter repository](https://github.com/rsms/inter) as best as I am able. Note this repository only contains the `woff2` formats but does generate and include latin-extended subsets for each font.
+This repository is just a means of more easily distributing the font. It tracks the  releases of the main [Inter repository](https://github.com/rsms/inter) as best as I am able. Note this repository only contains the `woff2` formats but does generate and include latin-extended subsets for each font.
 
 SCSS files are also available for use with the Sass preprocessor. The [`font-display` property](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display) can be overridden by setting `$inter-font-display` to a valid `font-display` value *before* importing the desired `.scss` file.
 
@@ -14,17 +14,19 @@ npm install --save inter-ui
 
 ### SCSS
 
-Add the following to your SCSS:
+Add the following to your SCSS to use the variable font with a non-variable fallback:
 
 ```scss
 @use "~inter-ui/default" with (
   $inter-font-display: swap,
   $inter-font-path: '~inter-ui/web'
 );
+
 @use "~inter-ui/variable" with (
   $inter-font-display: swap,
   $inter-font-path: '~inter-ui/variable'
 );
+
 @include default.all;
 @include variable.all;
 
@@ -35,7 +37,7 @@ html { font-family: "Inter", "system-ui"; }
 }
 ```
 
-Note that this `@use` syntax is [not currently supported in the node-sass or ruby sass implementations](https://sass-lang.com/documentation/at-rules/use). We recommend using the primary sass implementation [dart sass](https://github.com/sass/dart-sass).
+Note that this `@use` syntax is [not currently supported in the node-sass or ruby sass implementations](https://sass-lang.com/documentation/at-rules/use). We recommend using the primary sass implementation: [dart sass](https://github.com/sass/dart-sass).
 
 ### JS/CSS
 
@@ -44,10 +46,10 @@ We have pre-built CSS files that you can include directly (with `font-display` b
 Add the following to your script:
 
 ```js
-import "inter-ui/inter-web.css";
+import "inter-ui/inter.css";
 // Or use one of those versions:
-// import "inter-ui/inter-web-latin.css";
-// import "inter-ui/inter-display.css";
+// import "inter-ui/inter-latin.css"; // A subset of only english alphabet characters
+// import "inter-ui/inter-display.css"; // The display font is optimised for XL text
 // import "inter-ui/inter-display-latin.css";
 // import "inter-ui/inter-variable.css";
 // import "inter-ui/inter-variable-latin.css";

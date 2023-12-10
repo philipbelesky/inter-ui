@@ -5,6 +5,7 @@
   font-display: swap;
   src: url("variable-latin/InterVariable-subset.woff2") format("woff2");
 }
+
 @font-face {
   font-family: InterVariable;
   font-style: italic;
