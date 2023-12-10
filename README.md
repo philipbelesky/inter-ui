@@ -21,11 +21,11 @@ Add the following to your SCSS:
 ```scss
 @use "~inter-ui/default" with (
   $inter-font-display: swap,
-  $inter-font-path: '~inter-ui/Inter (web)'
+  $inter-font-path: '~inter-ui/web'
 );
 @use "~inter-ui/variable" with (
   $inter-font-display: swap,
-  $inter-font-path: '~inter-ui/Inter (web)'
+  $inter-font-path: '~inter-ui/variable'
 );
 @include default.all;
 @include variable.all;
@@ -46,11 +46,11 @@ We have pre-built CSS files that you can include directly (with `font-display` b
 Add the following to your script:
 
 ```js
-import "inter-ui/inter.css";
+import "inter-ui/inter-web.css";
 // Or use one of those versions:
-// import "inter-ui/inter-latin.css";
-// import "inter-ui/inter-hinted.css";
-// import "inter-ui/inter-hinted-latin.css";
+// import "inter-ui/inter-web-latin.css";
+// import "inter-ui/inter-display.css";
+// import "inter-ui/inter-display-latin.css";
 ```
 
 Add the following to your stylesheet:

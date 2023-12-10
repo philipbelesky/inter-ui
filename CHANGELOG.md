@@ -6,3 +6,4 @@
 - Reworked folder and CSS file names match Inter 4.0 and to improve compatability
   - **This will likely have broken your CSS or font file imports**
 - Currently the web hinted woff files are missing from Inter's relase archive. These will be added when they are available.
+- Removed .woff files from latin subsets (.woff2 provided for all fonts and sets)

@@ -1,5 +1,5 @@
 @use "default" with (
   $inter-font-display: swap,
-  $inter-font-path: 'Inter (web hinted latin)'
+  $inter-font-path: 'display-latin'
 );
 @include default.all;
