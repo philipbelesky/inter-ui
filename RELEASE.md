@@ -7,13 +7,11 @@
 - Create latin subsets and copy them to `*-latin` directories:
   - `$ npm run build-subsets`
 - Update version strings from `?v=X.XX` across in `_default.scss` and `_variable.scss` files
-- Update CSS files
-  - `$ npm run generate-css`
 - Publish release
   - `$ npm version X.Y.Z` (updates `package.json` + commits the change + makes the git tag)
   - `$ npm publish`
 
-# Build Dependencies
+## Build Dependencies
 
 - Standard npm stuff
 - `fonttools` and `brotli` for glyphhanger, see <https://github.com/zachleat/glyphhanger#prerequisite-pyftsubset>

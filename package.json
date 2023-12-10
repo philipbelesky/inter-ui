@@ -40,11 +40,9 @@
   "repository": "git@github.com:philipbelesky/inter-ui.git",
   "private": false,
   "devDependencies": {
-    "glyphhanger": "^5.0.0",
-    "sass": "1.69.5"
+    "glyphhanger": "^5.0.0"
   },
   "scripts": {
-    "generate-css": "sass --no-source-map inter.scss:inter.css inter-hinted.scss:inter-hinted.css inter-latin.scss:inter-latin.css inter-hinted-latin.scss:inter-hinted-latin.css",
     "build-supersets": "npm run cleanup-subsets && npm run delete-supersets && npm run copy-supersets",
     "delete-supersets": "rm -fr './web' && mkdir './web' && rm -fr './variable' && mkdir './variable' && rm -fr './display' && mkdir './display'",
     "copy-supersets": "cp -a ./temp/InterVariab*.woff2 ./variable/ & cp -a ./temp/InterDisplay-*.woff2 ./display & cp -a ./temp/Inter-*.woff2 ./web",
