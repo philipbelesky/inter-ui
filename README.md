@@ -2,7 +2,7 @@
 
 The CSS and web font files to easily self-host the [Inter font family](https://rsms.me/inter/) created by [Rasmus Andersson](https://rsms.me).
 
-This repository is just a means of more easily distributing the font. It tracks the  releases of the main [Inter repository](https://github.com/rsms/inter) as best as I am able. Note this repository only contains the `woff2` formats but does generate and include latin-extended subsets for each font.
+This repository is just a means of more easily distributing the font. It tracks the  releases of the main [Inter repository](https://github.com/rsms/inter) as best as I am able. Note that this repository only contains the `woff2` format but does generate and include latin-extended subsets for each font.
 
 SCSS files are also available for use with the Sass preprocessor. The [`font-display` property](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display) can be overridden by setting `$inter-font-display` to a valid `font-display` value *before* importing the desired `.scss` file.
 
@@ -48,7 +48,7 @@ Add the following to your script:
 ```js
 import "inter-ui/inter.css";
 // Or use one of those versions:
-// import "inter-ui/inter-latin.css"; // A subset of only english alphabet characters
+// import "inter-ui/inter-latin.css"; // A subset of only English alphabet characters
 // import "inter-ui/inter-display.css"; // The display font is optimised for XL text
 // import "inter-ui/inter-display-latin.css";
 // import "inter-ui/inter-variable.css";
@@ -118,7 +118,7 @@ As detailed in the main repo:
 
 ### Latin
 
-If you only need support for the latin characters. Then you can use this version. The normal `Inter (web)` version average filesize is between 150kb and 100kb, the reduced latin version is on average 30kb per font.
+If you only need support for Latin characters, you can use this version. The normal `Inter (web)` version average filesize is between 150kb and 100kb, the reduced Latin version is on average 30kb per font.
 
 This was generated using [glyphhanger](https://github.com/filamentgroup/glyphhanger). See `package.json` for the build script.
 
