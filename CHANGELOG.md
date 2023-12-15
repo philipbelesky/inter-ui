@@ -1,6 +1,6 @@
 # Change Log
 
-## [4.0.0] - yyyy-mm-dd
+## [4.0.0] - 2023-12-16
 
 - Updated font files to Inter 4.0 release, please [see their release notes](https://github.com/rsms/inter/releases/tag/v4.0)
 - Reworked folder and CSS file names to match Inter 4.0 and improve compatibility
