@@ -1,6 +1,6 @@
 {
   "name": "inter-ui",
-  "version": "4.0.0-rc1",
+  "version": "4.0.0",
   "description": "Font files for the Inter font family.",
   "main": "inter.css",
   "engines": {
