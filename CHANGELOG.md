@@ -1,5 +1,9 @@
 # Change Log
 
+## [4.0.1] - 2023-12-26
+
+- Decrease required node version
+
 ## [4.0.0] - 2023-12-16
 
 - Updated font files to Inter 4.0 release, please [see their release notes](https://github.com/rsms/inter/releases/tag/v4.0)
