@@ -1,5 +1,9 @@
 # Change Log
 
+## [4.0.2] - 2024-02-09
+
+- Fix paths for some inter display latin variants
+
 ## [4.0.1] - 2023-12-26
 
 - Decrease required node version
