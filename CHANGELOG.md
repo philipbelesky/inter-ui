@@ -1,5 +1,9 @@
 # Change Log
 
+## [4.1.0] - 2024-11-19
+
+- Updated font files to Inter 4.1 release, please [see their release notes](https://github.com/rsms/inter/releases/tag/v4.1)
+
 ## [4.0.2] - 2024-02-09
 
 - Fix paths for some inter display latin variants
